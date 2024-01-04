@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOMMA</title>
+    <style>
+        * {
+            text-decoration: none;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        header {
+            display: flex;
+            justify-content: space-around;
+            background-color: #f7ee02;
+            padding: 20px;
+            color: white;
+        }
+
+        header h1 {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        header nav ul {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            list-style-type: none;
+            padding: 10px;
+        }
+
+        header nav ul li {
+            display: inline;
+            font-size: larger;
+            padding-left: 20px;
+            padding-right: 20px;
+            margin-right: 10px;
+        }
+
+        .movie-card-container {
+            display: grid;
+            background: linear-gradient(rgba(219, 120, 21, 0.792),rgba(128, 210, 13, 0.721));
+            grid-template-columns: repeat(5, 1fr);
+            grid-gap: 10px;
+            padding: 20px;
+        }
+
+        .movie-card {
+            width: 150px;
+            height: 225px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        .movie-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .movie-card h2 {
+            margin: 10px 0;
+        }
+
+        .search-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 10px 0;
+        }
+
+        .search-container input[type="text"] {
+            background-color: #f7ee02;
+            width: 70%;
+            padding: 6px 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.486);
+        }
+        .search-container button{
+            height: auto;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: #f7ee02;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.486);
+        }
+    </style>
+</head>
+
+<body oncontextmenu="return true;">
+    <header>
+        <h1>SUNFLIX</h1>
+        <nav>
+            <ul>
+                <li><a href="#">🏡Home</a></li>
+                <li><a href="#">🤴🏻About</a></li>
+                <li><a href="#">🐞Bug</a></li>
+            </ul>
+        </nav>
+        <div class="search-container">
+            <form action="" method="get">
+                <input type="text" placeholder="Search..">
+                <button type="submit" onclick="">🔎</button>
+            </form>
+        </div>
+    </header>
+
+    <div class="movie-card-container">
+        <div class="movie-card">
+            <img src="images/movie1.jpeg" alt="Movie 1">
+            <h2>Movie 1</h2>
+        </div>
+        <div class="movie-card">
+            <img src="images/movie2.jpeg" alt="Movie 2">
+            <h2>Movie 2</h2>
+        </div>
+        <div class="movie-card">
+            <img src="images/movie3.jpeg" alt="Movie 3">
+            <h2>Movie 3</h2>
+        </div>
+        <div class="movie-card">
+            <img src="images/movie4.jpeg" alt="Movie 4">
+            <h2>Movie 4</h2>
+        </div>
+        <div class="movie-card">
+            <img src="images/movie5.jpeg" alt="Movie 5">
+            <h2>Movie 5</h2>
+        </div>
+        <div class="movie-card">
+            <img src="images/movie6.jpeg" alt="Movie 6">
+            <h2>Movie 6</h2>
+        </div>
+        <div class="movie-card">
+            <img src="images/movie7.jpeg" alt="Movie 7">
+            <h2>Movie 7</h2>
+        </div>
+        <div class="movie-card">
+            <img src="images/movie8.jpeg" alt="Movie 8">
+            <h2>Movie 8</h2>
+        </div>
+    </div>
+</body>
+
+</html>
